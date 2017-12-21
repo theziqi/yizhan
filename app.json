@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/start/start",
+    "pages/mail/mail",
+    "pages/index/index",
+    "pages/listDetail/listDetail",
+    "pages/mine/mine",
+    "pages/index1/index1",
+    "pages/write/write",
+    "pages/newList/newList",
+    "pages/about/about"
+    
+
+  ],
+  "window":{
+    "backgroundTextStyle":"white",
+    "navigationBarBackgroundColor": "#3688ff",
+    "navigationBarTextStyle":"white",
+    "navigationBarTitleText": "列表",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "backgroundColor":"#FAFAFA",
+    "borderStyle":"white",
+    "color":"#b2b2b2",
+    "selectedColor":"#1e1e1e",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "selectedIconPath":"static/images/heart1.png",
+      "iconPath":"static/images/heart.png",
+      "text": "已发布"
+    }, {
+      "pagePath": "pages/mail/mail",
+      "selectedIconPath":"static/images/Category1.png",
+      "iconPath":"static/images/Category.png",
+      "text": "列表"
+    }, {
+      "pagePath": "pages/mine/mine",
+      "selectedIconPath":"static/images/account1.png", 
+      "iconPath":"static/images/account.png",
+      "text": "我"
+    },
+    {
+      "pagePath": "pages/about/about",
+      "selectedIconPath": "static/images/service1.png",
+      "iconPath": "static/images/service.png",
+      "text": "关于"
+    }]
+  }
+}
