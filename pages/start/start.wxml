@@ -1,0 +1,23 @@
+<!--start.wxml-->
+<view class="container">
+  <view class="remind-box" wx:if="{{remind}}">
+    <image class="remind-img" src="/static/images/more/loading.gif"></image>
+  </view>
+  <block wx:else>
+    <image class="title" src="http://bmob-cdn-15738.b0.upaiyun.com/2017/12/20/000c5620404e6f18802a48740def3bd0.png"></image>
+    <view class="content">
+      <view class="hd" style="transform:rotateZ({{angle}}deg);">
+        <image class="logo" src="{{userInfo.avatarUrl}}"></image>
+        <image class="wave" src="/static/images/more/wave.png" mode="aspectFill"></image>
+        <image class="wave wave-bg" src="/static/images/more/wave.png" mode="aspectFill"></image>
+      </view>
+      <view class="bd">
+         <image class="smalltitle" src="http://bmob-cdn-15738.b0.upaiyun.com/2017/12/20/ebf93723406535ab806bea4f610e78b3.png"></image>
+        <view class="confirm-btn" bindtap='goToIndex'>
+          <text >立即体验</text>
+        </view>
+        <text class="copyright">© 2017 北京邮电大学QUK团队 倾情出品</text>
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,10 @@
+<view class="topBox">
+  <image src="../../static/images/qrcodett.png" mode="aspectFill"></image>
+  <text>v1.0.0</text>
+</view>
+<view class="bottomBox">
+  <view class="softHtp">
+    
+  </view>
+  <view>北京邮电大学QUK团队 版权所有</view>
+</view>

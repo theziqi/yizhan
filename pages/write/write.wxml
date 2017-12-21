@@ -1,0 +1,41 @@
+<loading hidden="{{loading}}">
+  页面初始化中...
+</loading>
+<form bindsubmit="sendNewMood">
+  <view class="add_pic" bindtap="uploadPic" wx-if="{{!isSrc}}">
+    <view>添加图片（选）</view>
+  </view>
+  <view wx:if="{{isSrc}}" class="image_box">
+    <view class="picPre">
+      <image src="{{src}}" mode="aspectFill"></image>
+      <view bindtap="clearPic"></view>
+    </view>
+  </view>
+  <view class="Typepicker">
+    <view class="pickeronly">
+      <picker range="{{itemType}}" name="typess" value="index" bindchange="bindPickerChange">
+        项目类型 › {{itemType[index]}}
+      </picker>
+    </view>
+  </view>
+  <view class="Typepicker">
+    <view class="pickeronly">
+      <picker mode="date" name="listStartDate" value="{{pickerliststartdate}}" bindchange="bindDateStartPickerChange">
+        开始时间 › {{pickerliststartdate}}
+      </picker>
+    </view>
+  </view>
+  <view class="Typepicker">
+    <view class="pickeronly">
+      <picker mode="date" name="listEndDate" value="{{pickerlistenddate}}" bindchange="bindDateEndPickerChange">
+        结束时间 › {{pickerlistenddate}}
+      </picker>
+    </view>
+  </view>
+  <input placeholder="输入标题（可选）" class="add_title" value="" bindinput="setTitle" name="title" />
+  <view class="addConent">
+    <textarea placeholder="填入项目详情" maxlength="1000" value="" name="content" />
+  </view>
+
+  <button class="fab" loading="{{isLoading}}" hover-start-time="200" disabled="{{isdisabled}}" formType="submit">发布</button>
+</form>
